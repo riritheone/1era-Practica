@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta charset="UTF-8">    
+      <title> FIBIONACCI </title>
+      <style>
+      #bloque_1 {background-color:green;}
+      span {font-weight:2px;}
+      </style>
+    </head>
+<style type="text/css">h1{color: Blue} </style>
+<body>
+	<P id= bloque_1>SUMA DE LA SECUENCIA DE FIBIONACCI</P>
+	<script type="text/javascript">
+	function sumOfEven(limit) {
+    var numeros, sum = 0, a = 0, b = 1;
+    while (b < limit) {
+        numeros = a;
+        a = b;
+        b += numeros;
+        if ((b & 1) === 0) {
+            sum += b;
+        }
+    }
+    return sum;
+}
+
+document.write(sumOfEven(4e6));
+</script>
+
+</body>
+</html>
+

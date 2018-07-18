@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8">
+	<title>PROJECT EULER #1</title>
+</head>
+<style type="text/css">h1{color: Blue} </style>
+<body>
+	<P>Este es el resultado de la Sumatoria de los multiplos de 3 y 5 hasta el numero 1000</P>
+	<script type="text/javascript">
+	var Respuesta = [];
+var k = 0;
+
+for (var i = 1; i < 1000; i++) {
+    if (i % 3 === 0 || i % 5 === 0) {
+        Respuesta[k] = i;
+        k++;
+    }
+}
+
+var sum = 0;
+
+for (var i = 0; i < Respuesta.length; i++) {
+    sum += Respuesta[i];
+}
+
+document.write(sum);</script>
+
+</body>
+</html>
